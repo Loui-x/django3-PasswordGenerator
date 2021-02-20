@@ -1,0 +1,28 @@
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<<div class="container text-center">
+
+
+<h1>Hello There.</h1>
+<h2>Generate Your Password Here</h2>
+<h3>Like this one here -> {{password}}</h3>
+<form action="password">
+<label>Select a Size   </label>
+<select name="len">
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10" >10</option>
+  <option value="11"selected="selected">11</option>
+  <option value="12">12</option>
+  <option value="13">13</option>
+  <option value="14" >14</option>
+</select><br>
+<input type="checkbox" name="upperCase"> Uppercase included <br>
+<input type="checkbox" name="numbers"> Numbers included <br>
+<input type="checkbox" name="specials"> Special Characters included <br>
+<input type="submit" class="btn btn-secondary">
+
+</form><br>
+  <a href="{% url 'about' %}"class="btn btn-light">About</a>
+
+  </div>
